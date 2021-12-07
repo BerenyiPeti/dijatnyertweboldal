@@ -1,0 +1,36 @@
+main, header, nav, article, footer, section{
+    border: 1px solid black;
+}
+
+body{
+    margin: 0px;
+}
+
+main{
+    display: grid;
+    grid-template-areas: "na"
+                         "se"
+                         "ar"
+                         "fo";
+    width: 1000px;
+    margin: auto;
+}
+
+article{
+    display: grid;
+    grid-area: ar;
+    grid-template-columns: 1fr 1fr;
+}
+
+section{
+    grid-area: se;
+}
+
+header{
+    grid-area: he;
+}
+
+nav{
+    grid-area: na;
+}
+
